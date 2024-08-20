@@ -4,7 +4,7 @@ const Card = ({ id, image, title }) => {
 	const navigate = useNavigate()
 
 	const handleClick = () => {
-		navigate('/Housesheet')	
+		navigate(`/Housesheet/${id}`)	
 	}
 
 	return (
