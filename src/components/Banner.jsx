@@ -1,11 +1,9 @@
-import '../styles/Banner.scss'
-
-const Banner = () => {
+const Banner = ({title, backgroundImage, alt}) => {
     return(
         <div className='banner'>
-            <div className='filter'>
-                <p className='banner-title'>Chez vous, partout et ailleurs</p>
-            </div>
+            <img src={backgroundImage} alt={alt} className='image'/>
+            <div className='filter'></div>
+            <div className='banner-title'><h1>{title}</h1></div>
         </div>
     )
 }

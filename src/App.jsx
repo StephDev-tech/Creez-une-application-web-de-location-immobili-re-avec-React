@@ -1,11 +1,11 @@
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx"
 import Home from "./pages/Home.jsx"
 import About from "./pages/About.jsx"
-
-
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Error from "./pages/Error.jsx";
+import Housesheet from "./pages/Housesheet.jsx"
+import './styles/Index.scss'
 
 const App = () => {
 	return (
@@ -15,6 +15,8 @@ const App = () => {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
+					<Route path="/housesheet/" element={<Housesheet />} />
+					<Route path="*" element={<Error />} />
 				</Routes>
 				<Footer />
 			</Router>

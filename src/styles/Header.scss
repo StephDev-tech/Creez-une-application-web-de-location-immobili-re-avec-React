@@ -5,20 +5,27 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
     box-sizing: border-box;
+
+    .nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 60px;
+    }
+    
+    .link{
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        color: black;
+
+        &.active{
+            border-bottom: 2px solid black;
+        }
+    }
 }
 
-.nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 60px;
-}
-
-.link{
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-}
