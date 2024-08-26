@@ -10,21 +10,28 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #ff6060;
+        background-color: $primary-color;
         border-radius: 5px;
+        @media screen and (max-width: 500px) {
+            height: 42px;
+        }
     }
     
     .title-accordion {
         font-family: "Montserrat", sans-serif;
         font-size: 24px;
         font-weight: 700;
-        color: $color_white;
+        color: $color-white;
+        @media screen and (max-width: 500px) {
+            font-size: 15px;
+            
+        }
     }
     
     .fa-chevron-up {
         font-size: 24px;
         font-weight: 700;
-        color: white;
+        color: $color-white;
     }
 
     @keyframes up {
@@ -74,12 +81,15 @@
     .content-accordion{
         margin: 0;
         width: 100%;
+        height: auto;
         padding: 20px;
         box-sizing: border-box;
         font-family: 'Montserrat', sans serif;
         font-size: 18px;
         font-weight: 400;
-        background-color: #F6F6F673;  
+        background-color: $background-color; 
+        list-style-type: none;
+        text-decoration: none;
     } 
 }
 

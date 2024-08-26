@@ -11,15 +11,32 @@
         font-family: 'Montserrat', sans serif;
         font-size: 250px;
         font-weight: 700;
-        color: #FF6060;
+        color: $primary-color;
+        @media screen and (max-width: 900px) {
+            font-size: 200px;
+            
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 100px;
+            
+        }
     }
 
     .error-subtitle{
         font-family: 'Montserrat', sans serif;
         font-size: 36px;
-        color: #FF6060;
+        color: $primary-color;
         margin-top: 0;
         margin-bottom: 100px;
+        @media screen and (max-width: 900px) {
+            font-size: 20px;
+            text-align: center;
+            
+        }
+        @media screen and (max-width: 500px) {
+            margin-right: 50px;
+            margin-left: 50px;
+        }
     }
     
     .error-link{

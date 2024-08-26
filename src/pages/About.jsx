@@ -31,7 +31,7 @@ const About = () => {
 			/>
 			<section className="card-about-content">
 				{aboutItems.map((itemValues, indexAbout) => {
-					return <Accordion key={`aboutCard-${indexAbout}`} Values={itemValues}/>;
+					return <Accordion key={`aboutCard-${indexAbout}`} title={itemValues.title} content={itemValues.content} />
 				})}
 			</section>
 		</div>

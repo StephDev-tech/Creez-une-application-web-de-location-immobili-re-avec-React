@@ -4,7 +4,7 @@ const Ratings = ({ rate }) => {
 
 	for (let i = 1; i <= 5; i++) {
 		stars.push(
-			<i
+			<i key={`star-`+i}
 				className={i <= rating ? "fa-solid fa-star rated" : "fa-solid fa-star"}
 			></i>
 		);

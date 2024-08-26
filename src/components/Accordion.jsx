@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Accordion = ({ Values }) => {
+const Accordion = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(true);
   const [hasInteracted, setHasInteracted] = useState(false);
 
@@ -12,14 +12,14 @@ const Accordion = ({ Values }) => {
   return (
     <div className="accordion">
       <div className="header-accordion">
-        <h2 className="title-accordion">{Values.title}</h2>
+        <h2 className="title-accordion">{title}</h2>
         <i
           className={`fa-solid fa-chevron-up ${hasInteracted ? (isOpen ? 'rotate-down' : 'rotate-up') : ''}`}
           onClick={toggleDropDown}
         ></i>
       </div>
       <div className={`${hasInteracted ? (isOpen ? 'opendiv' : 'closediv') : 'initial'}`}>
-        <p className="content-accordion">{Values.content}</p>
+        <p className="content-accordion">{content}</p>
       </div>
     </div>
   );
