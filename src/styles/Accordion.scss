@@ -18,7 +18,7 @@
     }
     
     .title-accordion {
-        font-family: "Montserrat", sans-serif;
+        font-family: $primary-font;
         font-size: 24px;
         font-weight: 700;
         color: $color-white;
@@ -45,11 +45,11 @@
     }
 
     .rotate-up{
-        animation: up 0.5s ease-out 1 forwards;
+        animation: up 1s cubic-bezier(0, 0.98, 0.58, 1) 1 forwards;
     }    
     
     .rotate-down{
-        animation: down 0.5s ease-out 1 forwards;
+        animation: down 2s cubic-bezier(0, 0.98, 0.58, 1) 1 forwards;
     }
     @keyframes open {
         0%{
@@ -70,7 +70,7 @@
         animation: close 0.5s ease-out 1 forwards;
     }
     .closediv{
-        animation: open 0.5s ease-out 1 forwards;
+        animation: open 1s ease-in 1 forwards;
     }
 
     .initial{
@@ -84,7 +84,7 @@
         height: auto;
         padding: 20px;
         box-sizing: border-box;
-        font-family: 'Montserrat', sans serif;
+        font-family: $primary-font;
         font-size: 18px;
         font-weight: 400;
         background-color: $background-color; 

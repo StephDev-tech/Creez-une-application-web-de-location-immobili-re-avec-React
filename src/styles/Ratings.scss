@@ -7,6 +7,10 @@
 	.fa-star {
 		font-size: 20px;
 		color: #e3e3e3;
+
+        @media screen and (max-width: 500px) {
+            font-size: medium;
+        }
 	}
     .rated{
         color: $primary-color;

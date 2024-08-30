@@ -8,6 +8,7 @@ const Carousel = () => {
 	const result = data.find((element) => element.id === houseId);
 	const pictures = result.pictures;
 	const usefull = pictures.length > 1;
+	
 
 	const prevPicture = () => {
 		const isFirstSlide = currentIndex === 0;
@@ -23,21 +24,10 @@ const Carousel = () => {
 
 	return (
 		<div className="carousel">
-			{usefull ? (
-				<i className="fa-solid fa-chevron-left" onClick={prevPicture}></i>
-			) : (
-				""
-			)}
-			<img
-				className="carousel-picture"
-				src={pictures[currentIndex]}
-				alt={result.title}
-			/>
-			{usefull ? (
-				<i className="fa-solid fa-chevron-right" onClick={nextPicture}></i>
-			) : (
-				""
-			)}
+			{usefull ? (<i className="fa-solid fa-chevron-left" onClick={prevPicture}></i>) : (	"")}
+			<img className="carousel-picture" src={pictures[currentIndex]} alt={result.title}/>
+			{usefull ? (<i className="fa-solid fa-chevron-right" onClick={nextPicture}></i>	) : (""	)}
+			{usefull ? (<p className="pic-number"> {currentIndex+1}/{pictures.length}</p>	) : (""	)}			
 		</div>
 	);
 };

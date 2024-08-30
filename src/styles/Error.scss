@@ -8,7 +8,7 @@
     .error-title{
         margin-top: 60px;
         margin-bottom: 0;
-        font-family: 'Montserrat', sans serif;
+        font-family: $primary-font;
         font-size: 250px;
         font-weight: 700;
         color: $primary-color;
@@ -23,7 +23,7 @@
     }
 
     .error-subtitle{
-        font-family: 'Montserrat', sans serif;
+        font-family: $primary-font;
         font-size: 36px;
         color: $primary-color;
         margin-top: 0;
@@ -41,7 +41,7 @@
     
     .error-link{
         margin-bottom: 120px;
-        font-family: 'Montserrat', sans serif;
+        font-family: $primary-font;
         font-size: 18px;
         font-weight: 500;
         color: black;
