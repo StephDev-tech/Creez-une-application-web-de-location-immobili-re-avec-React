@@ -38,7 +38,7 @@ const Housesheet = () => {
 
 	return (
 		<div className="housesheet">
-			<Carousel images={houseInfo.pictures || []} />
+			<Carousel pictures={houseInfo.pictures || []} title={houseInfo.title}/>
 			<div className="housesheet-info">
 				<div>
 					<div className="housesheet-title">
