@@ -49,7 +49,7 @@
     }    
     
     .rotate-down{
-        animation: down 2s cubic-bezier(0, 0.98, 0.58, 1) 1 forwards;
+        animation: down 1s cubic-bezier(0, 0.98, 0.58, 1) 1 forwards;
     }
     @keyframes open {
         0%{
@@ -67,7 +67,7 @@
         }
     }
     .opendiv{
-        animation: close 0.5s ease-out 1 forwards;
+        animation: close 1s cubic-bezier(0, 0.98, 0.58, 1) 1 forwards;
     }
     .closediv{
         animation: open 1s ease-in 1 forwards;
