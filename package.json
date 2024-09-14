@@ -2,7 +2,7 @@
   "name": "kasa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://stephdev-tech.github.io/Creez-une-application-web-de-location-immobili-re-avec-React/",
+  "homepage": "https://stephdev-tech.github.io/Creez-une-application-web-de-location-immobili-re-avec-React",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
